@@ -41,6 +41,8 @@ const FullCalendarBlockSchema = (intl) => {
           'title_format_month',
           'title_format_day',
           'initial_date',
+          'show_weekends',
+          'time_format_24',
         ],
       },
     ],
@@ -121,6 +123,16 @@ const FullCalendarBlockSchema = (intl) => {
         description: intl.formatMessage(messages.descriptionInitialDate),
         type: 'datetime',
         dateOnly: true,
+      },
+      show_weekends: {
+        title: intl.formatMessage(messages.labelShowWeekends),
+        type: 'boolean',
+        default: true,
+      },
+      time_format_24: {
+        title: intl.formatMessage(messages.labelTimeFormat24),
+        type: 'boolean',
+        default: true,
       },
     },
 

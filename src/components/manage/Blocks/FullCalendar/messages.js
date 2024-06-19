@@ -109,6 +109,14 @@ const messages = defineMessages({
     id: 'If not set, current date is used.',
     defaultMessage: 'If not set, current date is used.',
   },
+  labelShowWeekends: {
+    id: 'Show weekends',
+    defaultMessage: 'Show weekends',
+  },
+  labelTimeFormat24: {
+    id: 'Time format 24',
+    defaultMessage: 'Time format 24',
+  },
 });
 
 export default messages;

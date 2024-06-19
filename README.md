@@ -1,5 +1,7 @@
 # volto-fullcalendar-block
 
+forked from [mbarde/volto-fullcalendar-block](https://github.com/mbarde/volto-fullcalendar-block)
+
 Block for [Volto](https://github.com/plone/volto) to display events from an iCal/ics file in a [FullCalendar](https://fullcalendar.io/).
 
 ## Features
@@ -34,9 +36,16 @@ https://user-images.githubusercontent.com/4497578/154287676-295386f9-faac-47e8-b
 
 https://user-images.githubusercontent.com/4497578/154287799-eca71fe0-4ce2-4e9d-8921-9729e191f2fc.mp4
 
+### Note
+
+This fork adds some additional options to the sidebar to configure the calendar, so far :
+"Show Weekends" and "Time Format 24"
+
 ## Setup
 
 ### Add volto-fullcalendar-block to your Volto project
+
+## !!! No registration of this addon in yarnpkg yet !!!
 
 1. Make sure you have a [Plone backend](https://plone.org/download) up-and-running at http://localhost:8080/Plone
 
@@ -52,11 +61,11 @@ https://user-images.githubusercontent.com/4497578/154287799-eca71fe0-4ce2-4e9d-8
 
   ```JSON
   "addons": [
-      "@mbarde/volto-fullcalendar-block"
+      "@filith/volto-fullcalendar-block"
   ],
 
   "dependencies": {
-      "@mbarde/volto-fullcalendar-block": "*"
+      "@filith/volto-fullcalendar-block": "*"
   }
   ```
 
@@ -64,7 +73,7 @@ https://user-images.githubusercontent.com/4497578/154287799-eca71fe0-4ce2-4e9d-8
 
   ```
   npm install -g yo @plone/generator-volto
-  yo @plone/volto my-volto-project --addon @mbarde/volto-fullcalendar-block
+  yo @plone/volto my-volto-project --addon @filith/volto-fullcalendar-block
   cd my-volto-project
   ```
 

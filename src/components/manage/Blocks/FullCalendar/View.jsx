@@ -76,6 +76,14 @@ const FullCalendarBlockView = (props) => {
     }
   };
 
+  const timeFormat = data.time_format_24 ? 'H(:mm)' : 'h(:mm)a';
+
+  const slotLabelFormat = {
+    hour: data.time_format_24 ? 'numeric' : '2-digit',
+    minute: data.time_format_24 ? '2-digit' : undefined,
+    hour12: !data.time_format_24,
+  };
+
   const fcOptions = {
     initialDate: data.initial_date || null,
     plugins: [dayGridPlugin, iCalendarPlugin, listPlugin, timeGridPlugin],
@@ -101,6 +109,13 @@ const FullCalendarBlockView = (props) => {
     },
     locales: allLocales,
     locale: intl.locale ?? 'en',
+    weekends: data.show_weekends,
+    eventTimeFormat: {
+      hour: data.time_format_24 ? '2-digit' : 'numeric',
+      minute: '2-digit',
+      hour12: !data.time_format_24,
+    },
+    slotLabelFormat: slotLabelFormat,
   };
 
   return (

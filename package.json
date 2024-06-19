@@ -1,8 +1,9 @@
 {
-  "name": "@mbarde/volto-fullcalendar-block",
-  "version": "0.7.0",
-  "author": "Matthias Barde",
-  "description": "volto-fullcalendar-block: Volto add-on",
+  "name": "@filith/volto-fullcalendar-block",
+  "version": "0.8.0",
+  "author": "Thomas Fili",
+  "contributors": ["Matthias Barde"], 
+  "description": "volto-fullcalendar-block: Volto add-on Forked",
   "main": "src/index.js",
   "license": "MIT",
   "keywords": [
@@ -13,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:mbarde/volto-fullcalendar-block.git"
+    "url": "git@github.com:filith/volto-fullcalendar-block.git"
   },
   "scripts": {
     "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
@@ -29,7 +30,7 @@
     "@fullcalendar/timegrid": "5.9.0"
   },
   "devDependencies": {
-    "cypress": "11.1.0",
-    "@plone/scripts": "^3.0.0"
+    "@plone/scripts": "^3.0.0",
+    "cypress": "11.1.0"
   }
 }

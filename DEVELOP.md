@@ -17,8 +17,8 @@ Before starting make sure your development environment is properly set. See [Vol
 
         {
             "volto-fullcalendar-block": {
-                "url": "https://github.com/mbarde/volto-fullcalendar-block.git",
-                "package": "@mbarde/volto-fullcalendar-block",
+                "url": "https://github.com/filith/volto-fullcalendar-block.git",
+                "package": "@filith/volto-fullcalendar-block",
                 "branch": "develop",
                 "path": "src"
             }
